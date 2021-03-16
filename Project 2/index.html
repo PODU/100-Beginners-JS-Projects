@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+    <link rel="icon" href="http://example.com/favicon.png">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div id="main">
+        <label for="red"><h1>RED: <span id="redValue">0</span></h1></label><br>
+        <input type="range" oninput="changeBackground('red', this.value)" onchange="changeBackground('red', this.value)" value="255" id="red" name="red" min="0" max="255"><br>
+        <label for="green"><h1>GREEN: <span id="greenValue">0</span></h1></label><br>
+        <input type="range" oninput="changeBackground('green', this.value)" onchange="changeBackground('green', this.value)" value="255" id="green" name="green" min="0" max="255"><br>
+        <label for="blue"><h1>BLUE: <span id="blueValue">0</span></h1></label><br>
+        <input type="range" oninput="changeBackground('blue', this.value)" onchange="changeBackground('blue', this.value)" id="blue" value="255" name="blue" min="0" max="255"><br>
+        <label for="alpha"><h1>ALPHA: <span id="alphaValue">0</span></h1></label><br>
+        <input type="range" oninput="changeBackground('alpha', this.value)" onchange="changeBackground('alpha',this.value)" id="alpha" value="1" name="alpha" min="0" max="1" step="0.01"><br>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+</html>
